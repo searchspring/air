@@ -5,8 +5,8 @@ LABEL maintainer="Rick Yu <cosmtrek@gmail.com>"
 ENV GOPATH /go
 ENV GO111MODULE on
 
-COPY . /go/src/github.com/cosmtrek/air
-WORKDIR /go/src/github.com/cosmtrek/air
+COPY . /go/src/github.com/air-verse/air
+WORKDIR /go/src/github.com/air-verse/air
 
 RUN --mount=type=cache,target=/go/pkg/mod go mod download
 
